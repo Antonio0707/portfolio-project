@@ -52,3 +52,54 @@ header{
   background-color: var(--highlights-reverse);
   color: var(--highlights);
 }
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 90vw 1fr;
+  gap: 20px;
+  margin-top: 20px;
+
+}
+
+section#record{
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: 8px;
+    grid-column: 2;
+}
+
+section#record img.picture {
+  width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid var(--card-background);
+  outline: 5px solid var(--highlights);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+section#record h1 {
+  color: var(--highlights);
+  margin: 15px 0;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+div#social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin-top: 8px;
+  gap: 1em;
+}
+
+div#social a{
+  color: var(--highlights);
+  transition: 0.5s;
+}
+
+div#social a:hover{
+  color: var(--highlights-reverse);
+}

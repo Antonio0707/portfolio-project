@@ -65,7 +65,7 @@ section#record{
   background-color: var(--card-background);
   padding: 20px;
   border-radius: 8px;
-    grid-column: 2;
+  grid-column: 2;
 }
 
 section#record img.picture {
@@ -102,4 +102,36 @@ div#social a{
 
 div#social a:hover{
   color: var(--highlights-reverse);
+}
+
+section#details{
+  grid-column: 2;
+}
+
+article{
+  background-color: var(--card-background);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2{
+  color: var(--highlights);
+  margin-bottom: 15px;
+}
+
+.video-container{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }

@@ -188,7 +188,7 @@ article h2{
 
 #qualifications-container .course:hover{
   border-left-width: 15px;
-  border-color: var(--highlights);
+  border-left-color: var(--highlights);
   cursor: pointer;
 }
 
@@ -221,7 +221,7 @@ article h2{
 }
 
 #project-container .project:hover{
-  border-color: var(--highlights);
+  border-left-color: var(--highlights);
   border-left-width: 15px;
   cursor: pointer;
 }

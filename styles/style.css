@@ -203,10 +203,68 @@ article h2{
   font-size: 1.1em;
 }
 
+#project-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#project-container .project{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--main-background);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--highlights-reverse);
+  transition: border-color 0.5s, border-width 0.5s;
+}
+
+#project-container .project:hover{
+  border-color: var(--highlights);
+  border-left-width: 15px;
+  cursor: pointer;
+}
+
+#project-container .photo{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+footer{
+  background-color: var(--highlights);
+  color: var(--text-reverse);
+  text-align: center;
+  padding: 15px;
+}
+
+footer a{
+  color: var(--text-reverse);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover{
+  color: var(--highlights-reverse);
+}
 
 
 @media screen and (min-width: 768px) {
   #skill-container{
     grid-template-columns: 1fr 1fr;
+  }
+
+  #project-container .project{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #project-container .photo{
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }

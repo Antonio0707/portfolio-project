@@ -17,6 +17,15 @@
   --card-background: #ffffff;
 }
 
+body.dark-mode{
+  --main-background: #222222;
+  --text: #e0e0e0;
+  --text-reverse: #333333;
+  --highlights: #ff5522;
+  --highlights-reverse: #a73917;
+  --card-background: #444444;
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
